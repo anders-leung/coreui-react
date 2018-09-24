@@ -141,7 +141,7 @@ class AppSidebarNav extends Component {
               <i className={classes.icon} />{item.name}{this.navBadge(item.badge)}
             </RsNavLink> :
             <NavLink to={url} className={classes.link} activeClassName="active" onClick={this.hideMobile}>
-              <i className={classes.icon} />{item.name}{this.navBadge(item.badge)}
+              <i className={classes.icon}>{item.value}</i>{item.name}{this.navBadge(item.badge)}
             </NavLink>
         }
       </NavItem>
